@@ -1,0 +1,110 @@
+@import "refs/mixins";
+@import "refs/variables";
+@import "refs/tree";
+html, body {
+  padding: 0;
+  margin: 0;
+}
+body {
+  background-color: @light-bg;
+  height: 1000px;
+}
+header {
+  .gradient(@dark-bg, @light-bg);
+  height: 150px;
+  padding: 50px 0 20px 0;
+  #banner {
+    background: url("../images/top.png") center center no-repeat;
+    height: 150px;
+  }
+}
+#main {
+  .row {
+    text-align: center;
+    .container {
+      margin: 0 auto;
+      position: relative;
+      width: 0;
+      .event {
+        position: absolute;
+        width: @event-width;
+        font-family: DFTongTong;
+        .action {
+          text-align: left;
+        }
+        .time {
+          margin-top: 10px;
+          color: darkred;
+          text-align: right;
+        }
+      }
+      .tree {
+        margin-left: -(@tree-width/2);
+      }
+        &.tree-top {
+          .tree{
+            .sprite(@tree-top);
+          }
+          .event {
+            left: 60px;
+            bottom: 20px;
+          }
+        }
+        &.tree-6 {
+          .tree {
+            .sprite(@tree-6);
+          }
+          .event {
+            left: -380px;
+            top: 62px;
+          }
+        }
+        &.tree-5 {
+          .tree {
+            .sprite(@tree-5);
+          }
+          .event {
+            left: -366px;
+            top: 183px;
+          }
+        }
+        &.tree-4 {
+          .tree {
+            .sprite(@tree-4);
+          }
+          .event {
+            left: 60px;
+            top: 110px;
+          }
+        }
+        &.tree-3 {
+          .tree {
+            .sprite(@tree-3);
+          }
+          .event {
+            left: -390px;
+            top: 33px;
+          }
+        }
+        &.tree-2 {
+          .tree {
+            .sprite(@tree-2);
+          }
+          .event {
+            left: 120px;
+            top: 0px;
+          }
+        }
+        &.tree-bottom {
+          .tree {
+            .sprite(@tree-bottom);
+          }
+          .event {
+            left: -375px;
+            top: 72px;
+            width: 300px;
+          }
+        }
+    }
+  }
+}
