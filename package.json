@@ -27,6 +27,8 @@
     "gulp-font-spider": "^0.2.0",
     "gulp-if": "^2.0.0",
     "gulp-less": "^3.0.5",
+    "gulp-minify": "0.0.5",
+    "gulp-minify-css": "^1.2.3",
     "gulp-webserver": "^0.9.1",
     "sprity": "^1.0.8",
     "sprity-less": "^1.0.3"

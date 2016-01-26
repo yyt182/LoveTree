@@ -6,12 +6,21 @@ var autoprefixer = require('gulp-autoprefixer');
 var gulpif = require('gulp-if');
 var sprity = require('sprity');
 var fontSpider = require( 'gulp-font-spider' );
+var minify = require('gulp-minify');
 
 
 gulp.task('css',function () {
     gulp.src(['./src/**/*.less', '!./src/**/refs/*.less'])
         .pipe(less())
-        .pipe(gulp.dest('./build/'));
+        .pipe(autoprefixer())
+        .pipe(minify())
+        .pipe(gulp.dest('./dist/'));
+});
+
+gulp.task('js', function () {
+    gulp.src(['./src/**/*.js'])
+        .pipe(minify())
+        .pipe(gulp.dest('./dist/'))
 });
 
 gulp.task('css:debug', /*['sprites'],*/ function () {
@@ -40,8 +49,8 @@ gulp.task('sprites', function () {
 });
 
 gulp.task( 'fontspider', function(){
-    return gulp.src( './index.html' )
-        .pipe( fontSpider() );
+    //return gulp.src( './src/index.html' )
+    //    .pipe( fontSpider() );
 });
 
 gulp.task('webserver', function() {
@@ -61,6 +70,11 @@ gulp.task('watch', function() {
     watcher.on('change', function(event) {
         console.log('File ' + event.path + ' was ' + event.type + ', running tasks...');
     });
+});
+
+gulp.task('build', ['css', 'js'], function () {
+    gulp.src(['src/font', 'src/images', 'src/mock', 'src/index.html'])
+        .pipe(gulp.dest('./dist/'))
 });
 
 gulp.task('default', ['css:debug', 'webserver', 'watch', 'fontspider']);

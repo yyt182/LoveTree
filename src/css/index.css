@@ -1,10 +1,4 @@
 /*声明 WebFont*/
-@font-face {
-  font-family: 'DFTongTong';
-  src: url('../../font/DFTongTong.ttf') format('truetype');
-  font-weight: normal;
-  font-style: normal;
-}
 .tree {
   background-image: url(../images/tree.png);
 }
@@ -40,7 +34,7 @@ header #banner {
 #main .row .container .event {
   position: absolute;
   width: 350px;
-  font-family: DFTongTong;
+  font-family: TianZhen;
 }
 #main .row .container .event .action {
   text-align: left;
