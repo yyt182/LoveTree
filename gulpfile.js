@@ -5,7 +5,7 @@ var less      = require('gulp-less');
 var autoprefixer = require('gulp-autoprefixer');
 var gulpif = require('gulp-if');
 var sprity = require('sprity');
-var fontSpider = require( 'gulp-font-spider' );
+//var fontSpider = require( 'gulp-font-spider' );
 var minify = require('gulp-minify');
 
 
