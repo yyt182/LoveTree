@@ -1,0 +1,140 @@
+/*声明 WebFont*/
+@font-face {
+  font-family: 'DFTongTong';
+  src: url('../../font/DFTongTong.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+.tree {
+  background-image: url(../images/tree.png);
+}
+html,
+body {
+  padding: 0;
+  margin: 0;
+}
+body {
+  background-color: #e5f0f2;
+  height: 1000px;
+}
+header {
+  background-color: #8B9DB3;
+  background: -webkit-gradient(linear, left top, left bottom, from(#8B9DB3), to(#e5f0f2));
+  background: -webkit-linear-gradient(top, #8B9DB3, #e5f0f2);
+  background: -o-linear-gradient(top, #8B9DB3, #e5f0f2);
+  height: 150px;
+  padding: 50px 0 20px 0;
+}
+header #banner {
+  background: url("../images/top.png") center center no-repeat;
+  height: 150px;
+}
+#main .row {
+  text-align: center;
+}
+#main .row .container {
+  margin: 0 auto;
+  position: relative;
+  width: 0;
+}
+#main .row .container .event {
+  position: absolute;
+  width: 350px;
+  font-family: DFTongTong;
+}
+#main .row .container .event .action {
+  text-align: left;
+}
+#main .row .container .event .time {
+  margin-top: 10px;
+  color: darkred;
+  text-align: right;
+}
+#main .row .container .tree {
+  margin-left: -285px;
+}
+#main .row .container.tree-top .tree {
+  background-position: 0px 0px;
+  background-repeat: no-repeat;
+  overflow: hidden;
+  display: block;
+  width: 570px;
+  height: 373px;
+}
+#main .row .container.tree-top .event {
+  left: 60px;
+  bottom: 20px;
+}
+#main .row .container.tree-6 .tree {
+  background-position: 0px -373px;
+  background-repeat: no-repeat;
+  overflow: hidden;
+  display: block;
+  width: 570px;
+  height: 648px;
+}
+#main .row .container.tree-6 .event {
+  left: -380px;
+  top: 62px;
+}
+#main .row .container.tree-5 .tree {
+  background-position: 0px -1021px;
+  background-repeat: no-repeat;
+  overflow: hidden;
+  display: block;
+  width: 570px;
+  height: 558px;
+}
+#main .row .container.tree-5 .event {
+  left: -366px;
+  top: 183px;
+}
+#main .row .container.tree-4 .tree {
+  background-position: 0px -1579px;
+  background-repeat: no-repeat;
+  overflow: hidden;
+  display: block;
+  width: 570px;
+  height: 595px;
+}
+#main .row .container.tree-4 .event {
+  left: 60px;
+  top: 110px;
+}
+#main .row .container.tree-3 .tree {
+  background-position: 0px -2174px;
+  background-repeat: no-repeat;
+  overflow: hidden;
+  display: block;
+  width: 570px;
+  height: 360px;
+}
+#main .row .container.tree-3 .event {
+  left: -390px;
+  top: 33px;
+}
+#main .row .container.tree-2 .tree {
+  background-position: 0px -2534px;
+  background-repeat: no-repeat;
+  overflow: hidden;
+  display: block;
+  width: 570px;
+  height: 210px;
+}
+#main .row .container.tree-2 .event {
+  left: 120px;
+  top: 0px;
+}
+#main .row .container.tree-bottom .tree {
+  background-position: 0px -2744px;
+  background-repeat: no-repeat;
+  overflow: hidden;
+  display: block;
+  width: 570px;
+  height: 348px;
+}
+#main .row .container.tree-bottom .event {
+  left: -375px;
+  top: 72px;
+  width: 300px;
+}
