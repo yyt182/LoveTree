@@ -34,7 +34,6 @@ header #banner {
 #main .row .container .event {
   position: absolute;
   width: 350px;
-  font-family: TianZhen;
 }
 #main .row .container .event .action {
   text-align: left;

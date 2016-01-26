@@ -27,7 +27,7 @@
         $.get('mock/events.json', function(data) {
             $('#J-tree').append(generateEventsHtml(data));
                 //
-                $youziku.load(".event", "69eb2332d5874caebf76ac5e16d11f41", "TianZhen");
+                $youziku.load("#J-tree", "57fb4846c8714cf9970167a324e8c34b", "HaTian-SuiXing");
             //$youziku.load(".event", "d3cb691fe7b1446b96f53a1ad4d991a0", "ShanWenFeng");
             $youziku.draw();
         });
