@@ -36,6 +36,7 @@ header #banner {
   width: 350px;
 }
 #main .row .container .event .action {
+  font-size: 18px;
   text-align: left;
 }
 #main .row .container .event .time {
